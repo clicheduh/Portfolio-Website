@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  color: #1b2448;
+  box-sizing: border-box;
+}
+
+/*************************** SECTION 1 ********************************/
+.navbar {
+  background: rgb(8, 11, 22);
+  padding: 20px 30px;
+}
+.navbar-brand {
+  color: #fff;
+  font-family: "Sacramento", cursive;
+  font-size: 170%;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.navbar-brand:hover {
+  color: #fff;
+}
+.nav-item {
+  margin-right: 25px;
+  font-size: 1.05rem;
+}
+.nav-link {
+  color: #b0b2c3;
+}
+.navbar .nav-link:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(253, 76, 42, 1);
+  color: #fff;
+}
+.custom-toggler {
+  border-color: #fff;
+}
+.hello {
+  position: relative;
+  width: 100%;
+  height: 89%;
+  background: rgb(9, 12, 24);
+  background: linear-gradient(
+    180deg,
+    rgb(8, 11, 22) 0%,
+    rgb(12, 15, 32) 13%,
+    rgba(13, 17, 35, 1) 30%,
+    rgba(13, 17, 37, 1) 52%,
+    rgba(13, 17, 38, 0.99) 78%,
+    rgba(13, 17, 47, 0.96) 100%
+  );
+  color: #fff;
+  -webkit-box-shadow: 0 10px 20px -8px black;
+  -moz-box-shadow: 0 10px 20px -8px black;
+  box-shadow: 0 10px 20px -8px black;
+}
+.hello .hello-text {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  padding-left: 4rem;
+}
+.hello .my-name hr {
+  background-color: rgba(253, 76, 42, 1);
+  width: 255px;
+  margin-left: 0;
+  opacity: 0.8;
+  height: 1.5px;
+}
+.hello .my-name {
+  color: #9599ad;
+  margin-bottom: 2rem;
+  font-family: "helvetica", serif;
+  font-size: 90%;
+  letter-spacing: 0.4rem;
+  text-transform: capitalize;
+}
+.hello .my-info {
+  font-size: 325%;
+  margin-bottom: -10px;
+}
+.hello .about-me-btn {
+  margin-top: 4.5rem;
+  border-radius: 0;
+  padding: 0px 20px 10px 20px;
+  line-height: 2.5;
+  font-size: 1rem;
+  font-family: "helvetica";
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  background: rgb(131, 58, 180);
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(225, 36, 63, 1) 0%,
+    rgba(253, 29, 29, 1) 0%,
+    rgba(183, 46, 116, 1) 0%,
+    rgba(253, 76, 42, 1) 0%,
+    rgba(246, 73, 50, 1) 0%,
+    rgba(243, 72, 53, 1) 54%,
+    rgba(248, 100, 51, 1) 100%,
+    rgba(253, 127, 49, 1) 100%
+  );
+  border: none;
+  border-radius: 1.5px;
+  opacity: 0.9;
+  color: #fff;
+  transition: all 0.35s ease-out;
+  width: 85px;
+  height: 42px;
+  text-align: left;
+  overflow: hidden;
+}
+.about-me-btn:hover {
+  width: 310px;
+}
+
+/*************************** SECTION 2 ********************************/
+.section-head h5 {
+  font-family: "Jost", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #b19386;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+}
+.section-head h3 {
+  font-family: inherit;
+  font-size: 2.3rem;
+  color: inherit;
+}
+.about-me #about-me-text {
+  margin-left: 3rem;
+  padding-top: 1.5rem;
+}
+.about-me #about-me-text h5 {
+  font-size: 140%;
+}
+.about-me #about-me-text p {
+  font-size: 22px;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: #8d91a3;
+  line-height: 1.6;
+}
+.about-me #profile-pic img {
+  width: 500px;
+  margin: 4rem;
+  box-shadow: 0 20px 80px 0 rgb(161, 152, 152);
+}
+.skills {
+  background: rgb(235, 235, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(235, 235, 235, 0.35) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+/********************************** SKILL SET *************************************/
+.progress {
+  width: 130px;
+  height: 130px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+}
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #44484b;
+  font-size: 24px;
+  color: #fff;
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+.progress.blue .progress-bar {
+  border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar {
+  border-color: #fdba04;
+}
+.progress.yellow .progress-left .progress-bar {
+  animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar {
+  border-color: #ed687c;
+}
+.progress.pink .progress-left .progress-bar {
+  animation: loading-4 0.4s linear forwards 1.8s;
+}
+.progress.green .progress-bar {
+  border-color: #1abc9c;
+}
+.progress.green .progress-left .progress-bar {
+  animation: loading-5 1.2s linear forwards 1.8s;
+}
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg);
+  }
+}
+@media only screen and (max-width: 990px) {
+  .progress {
+    margin-bottom: 20px;
+  }
+}
+/*-----------------x------------x----------x----------x-----------x--------------*/
+
+.project-img {
+  width: 1000px;
+  margin-bottom: 2rem;
+}
+.project-card {
+  margin-left: 12rem;
+  margin-right: auto;
+  display: inline-block;
+}
+.project-info {
+  margin-left: 37rem;
+  margin-bottom: 3rem;
+}
+
+.project .contact-info {
+  margin-left: 7rem;
+}
+.contact-me h4 {
+  margin-bottom: 1.7rem;
+  font-size: 130%;
+}
+.contact-me p {
+  color: #8d91a3;
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+}
+.social-media {
+  padding-left: 1.25rem;
+}
+.social-media span {
+  margin-right: 1.7rem;
+}
+.avail {
+  padding-left: 1.25rem;
+}
+footer {
+  background-color: rgb(8, 11, 22);
+  color: #fff;
+}
