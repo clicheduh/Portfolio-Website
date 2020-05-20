@@ -6,7 +6,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "League Spartan", Helvetica, Arial, sans-serif;
+  font-family: "League Spartan", "Jost", "Arial", sans-serif;
   color: #1b2448;
   box-sizing: border-box;
 }
