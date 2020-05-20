@@ -13,7 +13,7 @@ body {
 
 /*************************** SECTION 1 ********************************/
 .navbar {
-  background: rgb(8, 11, 22);
+  background: #080b16;
   padding: 20px 30px;
 }
 .navbar-brand {
@@ -88,12 +88,12 @@ body {
 .hello .about-me-btn {
   margin-top: 4.5rem;
   border-radius: 0;
-  padding: 0px 20px 10px 20px;
+  padding: 0px 5px 50px 20px;
   line-height: 2.5;
-  font-size: 1rem;
-  font-family: "helvetica";
+  font-size: 1.2rem;
+  font-family: "libre-baskerville", serif;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1.5px;
   background: rgb(131, 58, 180);
   background: rgb(131, 58, 180);
@@ -118,6 +118,9 @@ body {
   height: 42px;
   text-align: left;
   overflow: hidden;
+}
+#showonmobile {
+  display: none;
 }
 .about-me-btn:hover {
   width: 310px;
@@ -158,16 +161,17 @@ body {
   margin: 4rem;
   box-shadow: 0 20px 80px 0 rgb(161, 152, 152);
 }
+
+/*************************** SECTION 3 ********************************/
 .skills {
   background: rgb(235, 235, 235);
   background: linear-gradient(
     180deg,
-    rgba(235, 235, 235, 0.35) 0%,
+    rgba(180, 177, 177, 0.15) 0%,
     rgba(255, 255, 255, 1) 100%
   );
+  padding-bottom: 4rem;
 }
-
-/********************************** SKILL SET *************************************/
 .progress {
   width: 130px;
   height: 130px;
@@ -319,24 +323,66 @@ body {
     margin-bottom: 20px;
   }
 }
-/*-----------------x------------x----------x----------x-----------x--------------*/
 
-.project-img {
-  width: 1000px;
-  margin-bottom: 2rem;
+/*************************** SECTION 4 ********************************/
+.overlay {
+  background-color: rgba(44, 46, 53, 0.4);
+  width: 900px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .project-card {
-  margin-left: 12rem;
-  margin-right: auto;
   display: inline-block;
+  margin-bottom: 6rem;
+  background-size: cover;
+  width: 900px;
+  height: 500px;
+  box-shadow: 0 20px 80px 0 rgb(161, 152, 152);
+  position: relative;
+}
+.project1 {
+  background-image: url("./img/cte1.JPG");
+}
+.project2 {
+  background-image: url("./img/gform.JPG");
 }
 .project-info {
-  margin-left: 37rem;
-  margin-bottom: 3rem;
+  color: #fff;
+  position: absolute;
+  left: 3rem;
+  bottom: 5rem;
+  text-align: left;
+}
+.project-info h3 {
+  font-size: 250%;
+  text-shadow: rgb(48, 48, 48) -1px 1px 5px;
+}
+.project-info h5 {
+  font-family: "libre-baskerville", serif;
+  font-size: 120%;
+  font-style: italic;
+  text-shadow: rgb(48, 48, 48) -1px 1px 5px;
 }
 
-.project .contact-info {
-  margin-left: 7rem;
+/*************************** SECTION 5 ********************************/
+.contact-me {
+  background: rgb(235, 235, 235);
+  background: linear-gradient(
+    180deg,
+    rgba(180, 177, 177, 0.15) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.contact-info {
+  margin-left: 9rem;
+}
+.contact-info i {
+  color: #1b2448;
+}
+.contact-me {
+  padding-bottom: 3rem;
 }
 .contact-me h4 {
   margin-bottom: 1.7rem;
@@ -348,15 +394,445 @@ body {
   font-weight: 500;
 }
 .social-media {
-  padding-left: 1.25rem;
+  padding-left: 2rem;
 }
 .social-media span {
   margin-right: 1.7rem;
 }
+.social-media a {
+  color: #1b2448;
+}
 .avail {
-  padding-left: 1.25rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+.fa-github:hover {
+  color: #333;
+}
+.fa-linkedin-in:hover {
+  color: #2867b2;
+}
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+.fa-codepen:hover {
+  color: #000;
 }
 footer {
   background-color: rgb(8, 11, 22);
   color: #fff;
+  padding-bottom: 0;
+}
+
+/*************************** MEDIA QUERIES ********************************/
+@media (max-width: 1379.98px) {
+  .hello .my-info {
+    font-size: 300%;
+  }
+  .about-me #profile-pic img {
+    width: 430px;
+    margin: 4rem;
+  }
+  .contact-info {
+    margin-left: 5.5rem;
+  }
+  .social-media span {
+    margin-right: 1.7rem;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .hello .my-info {
+    font-size: 275%;
+  }
+  .about-me #about-me-text {
+    margin-left: 1.25rem;
+    padding-top: 0.5rem;
+  }
+  .about-me #profile-pic img {
+    width: 360px;
+    margin: 3rem;
+  }
+  .about-me #about-me-text h5 {
+    font-size: 125%;
+  }
+  .about-me #about-me-text p {
+    font-size: 125%;
+  }
+  .overlay {
+    width: 750px;
+    height: 416.66px;
+  }
+  .project-card {
+    display: inline-block;
+    margin-bottom: 6rem;
+    background-size: cover;
+    width: 750px;
+    height: 416.66px;
+    box-shadow: 0 20px 80px 0 rgb(161, 152, 152);
+    position: relative;
+  }
+  .project-info {
+    color: #fff;
+    position: absolute;
+    left: 2.5rem;
+    bottom: 4.166rem;
+    text-align: left;
+  }
+  .project-info h3 {
+    font-size: 230%;
+  }
+  .project-info h5 {
+    font-size: 110.39%;
+  }
+  .contact-info {
+    margin-left: 1.5rem;
+  }
+  .social-media span {
+    margin-right: 1.1rem;
+    font-size: 75%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .hello .my-info {
+    font-size: 280%;
+  }
+  .about-me {
+    text-align: center;
+  }
+  .about-me #about-me-text {
+    margin-left: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .about-me #profile-pic img {
+    width: 375px;
+    margin-top: 0.3rem;
+  }
+  .about-me #about-me-text h5 {
+    font-size: 125%;
+  }
+  .about-me #about-me-text p {
+    font-size: 125%;
+  }
+  .skills {
+    padding-bottom: 0;
+  }
+  .progress {
+    width: 110px;
+    height: 110px;
+  }
+  .overlay {
+    width: 610px;
+    height: 339.14px;
+  }
+  .project-card {
+    display: inline-block;
+    margin-bottom: 6rem;
+    background-size: cover;
+    width: 610px;
+    height: 339.14px;
+    box-shadow: 0 20px 80px 0 rgb(161, 152, 152);
+    position: relative;
+  }
+  .project-info {
+    color: #fff;
+    position: absolute;
+    left: 2.5rem;
+    bottom: 3rem;
+    text-align: left;
+  }
+  .project-info h3 {
+    font-size: 210%;
+  }
+  .project-info h5 {
+    font-size: 110.39%;
+  }
+  .contact-me .row div:nth-child(3) {
+    border-right: none;
+  }
+  .contact-me h4 {
+    margin-bottom: 1.7rem;
+    font-size: 135%;
+  }
+  .contact-me p {
+    color: #8d91a3;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+  }
+  .contact-info {
+    margin-left: 3.5rem;
+  }
+  .social-media {
+    text-align: center;
+  }
+  .social-media span {
+    margin-right: 2.5rem;
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 850px) and (max-width: 991.98px) {
+  .contact-me h4 {
+    margin-bottom: 1.7rem;
+    font-size: 130%;
+  }
+  .contact-me p {
+    color: #8d91a3;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+  }
+  .contact-info {
+    margin-left: 6rem;
+  }
+  .avail {
+    margin-right: 0.8rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 150%;
+    margin-left: 0.9rem;
+    margin-top: 1rem;
+  }
+  .custom-toggler {
+    border-color: #fff;
+    margin-right: 0.8rem;
+  }
+  .hello .hello-text {
+    top: 35%;
+    padding-left: 2.5rem;
+  }
+  .hello .my-info {
+    font-size: 210%;
+    line-height: 3.6rem;
+  }
+  .hello .my-name hr {
+    width: 240px;
+  }
+  .hello .my-name {
+    font-size: 80%;
+    letter-spacing: 0.4rem;
+    text-transform: capitalize;
+  }
+  .section-head h5 {
+    font-size: 0.85rem;
+  }
+  .section-head h3 {
+    font-size: 2.1rem;
+  }
+  .about-me {
+    padding-bottom: 2.75rem;
+  }
+  .about-me #profile-pic img {
+    width: 325px;
+    margin-top: 0.3rem;
+  }
+  .about-me #about-me-text p {
+    font-size: 120%;
+  }
+  .skills {
+    padding-bottom: 0;
+  }
+  .progress {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 2.75rem;
+  }
+  .progress-value i {
+    font-size: 170%;
+  }
+  .overlay {
+    width: 450px;
+    height: 250.2px;
+  }
+  .project-card {
+    display: inline-block;
+    margin-bottom: 6rem;
+    background-size: cover;
+    width: 450px;
+    height: 250.2px;
+    box-shadow: 0 15px 60px 0 rgb(161, 152, 152);
+    position: relative;
+  }
+  .project-info {
+    color: #fff;
+    position: absolute;
+    left: 1.7rem;
+    bottom: 2rem;
+    text-align: left;
+  }
+  .project-info h3 {
+    font-size: 180%;
+  }
+  .project-info h5 {
+    font-size: 105%;
+  }
+  .contact-me {
+    text-align: center;
+  }
+  .contact-me .row div:nth-child(3) {
+    border-right: 2px solid #fff;
+  }
+  .contact-info {
+    margin: 0;
+  }
+  .contact-me h4 {
+    margin-bottom: 1.7rem;
+    font-size: 120%;
+  }
+  .contact-me p {
+    color: #8d91a3;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 115%;
+  }
+  .social-media {
+    padding: 0;
+  }
+  .social-media span {
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+    font-size: 90%;
+  }
+  footer {
+    font-size: 95%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #bootstrap-override1,
+  #bootstrap-override2,
+  #bootstrap-override3,
+  #bootstrap-override4 {
+    padding-bottom: 0;
+  }
+  .navbar-brand {
+    font-size: 135%;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+  }
+  .custom-toggler {
+    border-color: #fff;
+    margin-right: 0rem;
+  }
+  .hello .hello-text {
+    top: 40%;
+    padding-left: 2rem;
+  }
+  .hello .my-info {
+    font-size: 175%;
+    line-height: 3.25rem;
+  }
+  .hello .my-name hr {
+    width: 220px;
+  }
+  .hello .my-name {
+    font-size: 75%;
+    letter-spacing: 0.35rem;
+    text-transform: capitalize;
+  }
+  #hideonmobile {
+    display: none;
+  }
+  #showonmobile {
+    display: inline-block;
+  }
+  .section-head h5 {
+    font-size: 0.75rem;
+  }
+  .section-head h3 {
+    font-size: 2rem;
+  }
+  .about-me {
+    padding-bottom: 2.75rem;
+  }
+  .about-me .about-me-text {
+    padding-top: 0;
+  }
+  .about-me #profile-pic img {
+    width: 250px;
+    margin-top: 0.3rem;
+    margin: 0;
+  }
+  .about-me #about-me-text p {
+    font-size: 120%;
+  }
+  .skills {
+    margin-bottom: -4rem;
+    padding-bottom: 0;
+  }
+  .progress {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 2.75rem;
+  }
+  .progress-value i {
+    font-size: 170%;
+  }
+  .overlay {
+    width: 270px;
+    height: 139px;
+  }
+  .project-card {
+    display: inline-block;
+    margin-left: -15px;
+    margin-bottom: 6rem;
+    background-size: cover;
+    width: 270px;
+    height: 139px;
+    box-shadow: 0 10px 40px 0 rgb(161, 152, 152);
+    position: relative;
+  }
+  .project-info {
+    color: #fff;
+    position: absolute;
+    text-align: left;
+    bottom: 5px;
+    left: 12px;
+  }
+  .project-info h3 {
+    font-size: 150%;
+    margin-bottom: 0;
+  }
+  .project-info h5 {
+    font-size: 100%;
+  }
+  .contact-me {
+    text-align: center;
+    margin-top: -60px;
+  }
+  .contact-info {
+    margin: 0;
+  }
+  .contact-me h4 {
+    margin-bottom: 1.7rem;
+    font-size: 120%;
+  }
+  .contact-me p {
+    color: #8d91a3;
+    font-family: "Jost", sans-serif;
+    font-weight: 500;
+    font-size: 115%;
+  }
+  .avail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .social-media {
+    padding: 0;
+  }
+  .social-media span {
+    margin-right: 0.875rem;
+    margin-left: 0.875rem;
+    font-size: 80%;
+  }
+  footer {
+    font-size: 95%;
+    padding: 0;
+  }
 }
