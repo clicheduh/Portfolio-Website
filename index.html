@@ -29,11 +29,11 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg lighten-4">
         <a class="navbar-brand" href="#">Aditya Shrivastav</a>
         <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><i class="fas fa-bars fa-1x"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
@@ -62,18 +62,21 @@
             <div class="my-info">Front-end Developer.</div>
             <div class="my-info">Graphic Designer.</div>
             <div class="my-info">Waffle Lover.</div>
-            <a href="#about-me"><button type="button" class="btn btn-md about-me-btn">Psst! Wanna know about
-                    me?</button></a>
+            <a href="#about-me">
+                <button type="button" id="hideonmobile" class="btn btn-md about-me-btn">Psst! Wanna know about
+                    me?</button>
+            </a>
         </div>
     </div>
 
+    <!-- About Me -->
     <div class="container-fluid about-me" id="about-me">
         <div class="row p-5">
             <div class="col-12 text-center p-5 section-head" id="bootstrap-override1">
                 <h5>Who am I? What do I do?</h5>
                 <h3>About me</h3>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 p-5" id="remove-padding">
                 <div id="about-me-text">
                     <h5> Who am I? </h5>
                     <p class="lead"> I am a college student pursuing B.E. Mechanical Engineering in Birla Institute of
@@ -91,7 +94,7 @@
         </div>
     </div>
 
-
+    <!-- Skills -->
     <div class="container-fluid skills" id="skills">
         <div class="row p-4">
             <div class="col-12 text-center p-5 section-head" id="bootstrap-override2">
@@ -153,6 +156,7 @@
         </div>
     </div>
 
+    <!-- Latest Work -->
     <div class="container-fluid text-center latest-work" id="latest-work">
         <div class="row p-5">
             <div class="col-12 text-center p-5 section-head" id="bootstrap-override3">
@@ -160,7 +164,7 @@
                 <h3>Latest Work</h3>
             </div>
             <div class="col-12">
-                <a href="https://bpgc-cte.org/">
+                <a href="https://bpgc-cte.org/" target="_blank">
                     <div class="project-card project1">
                         <div class="overlay">
                             <div class="project-info">
@@ -173,21 +177,20 @@
             </div>
             <hr>
             <div class="col-12">
-                <a href="">
-                    <div class="project-card project2">
-                        <div class="overlay">
-                            <div class="project-info">
-                                <h3>Google form automation</h3>
-                                <h5>Google form details via email</h5>
-                            </div>
+                <div class="project-card project2">
+                    <div class="overlay">
+                        <div class="project-info">
+                            <h3>Google form automation</h3>
+                            <h5>Google form details via email</h5>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
 
         </div>
     </div>
 
+    <!-- Contact Me -->
     <div class="container-fluid contact-me" id="contact-me">
         <div class="row p-4">
             <div class="col-12 text-center p-5 section-head" id="bootstrap-override4">
@@ -210,17 +213,21 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-4">
                 <div class="social-media">
-                    <h4>Follow me on</h4>
-                    <a href="https://github.com/clicheduh/qstpwebd"><span><i class="fab fa-github fa-3x"></i></span></a>
-                    <a href="https://www.linkedin.com/in/aditya-shrivastav-617026195/"><span><i
+                    <h4>Check me out on</h4>
+                    <a href="https://github.com/clicheduh/qstpwebd" target="_blank"><span><i
+                                class="fab fa-github fa-3x"></i></span></a>
+                    <a href="https://www.linkedin.com/in/aditya-shrivastav-617026195/" target="_blank"><span><i
                                 class="fab fa-linkedin-in fa-3x"></i></span></a>
-                    <a href="https://twitter.com/AdityaS92122841"><span><i class="fab fa-twitter fa-3x"></i></span></a>
-                    <a href="https://codepen.io/clicheduh"><span><i class="fab fa-codepen fa-3x"></i></span></a>
+                    <a href="https://twitter.com/AdityaS92122841" target="_blank"><span><i
+                                class="fab fa-twitter fa-3x"></i></span></a>
+                    <a href="https://codepen.io/clicheduh" target="_blank"><span><i
+                                class="fab fa-codepen fa-3x"></i></span></a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="text-center p-5">
         <p>&copy; 2020 Aditya Shrivastav</p>
         <p> Made with <i class="fas fa-heart"></i> by Aditya </p>
